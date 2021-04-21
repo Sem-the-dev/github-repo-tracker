@@ -1,10 +1,12 @@
 import React from "react";
 import { Repos } from "./container";
+import { Footer } from "./components";
 
 function App() {
   return (
-    <div>
+    <div id="container">
       <Repos />
+      <Footer />
     </div>
   );
 }

@@ -21,6 +21,10 @@ body {
   color: var(--text);
 }
 
+#container {
+  height: 100vh;
+}
+
 header {
   background-color: var(--secondary);
   margin-bottom: 10px;
@@ -45,10 +49,18 @@ h2 {
   margin-bottom: 1rem;
 }
 
+#avatar-image {
+  border-radius: 38px;
+  height: 5rem;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+
 section {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -62,6 +74,17 @@ section {
 h3 {
   color: var(--text-highlight);
   font-size: 1rem;
+  text-decoration: none;
+}
+#git-repo a {
+  color: var(--text-highlight);
+  text-decoration: none;
+}
+
+#git-repo:hover a {
+  cursor: pointer;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 .card span {
@@ -114,10 +137,8 @@ input:nth-child(2):hover {
   border: none;
 }
 
-
 @media only screen and (min-width: 715px) {
-
-    .card{
-        width: 30vh;
-    }
+  .card {
+    width: 30vh;
+  }
 }
