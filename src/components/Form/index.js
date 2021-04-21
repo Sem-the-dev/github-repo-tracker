@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
-function Form({startSearch}) {
+function Form({ startSearch }) {
   const [name, setName] = useState("");
-  const [nameInput, setNameInput] = useState("");
+  const [nameInput, setNameInput] = useState("sem-the-dev");
 
   const dispatch = useDispatch();
 

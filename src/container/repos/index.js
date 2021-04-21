@@ -19,7 +19,7 @@ function Repos() {
 
   // }, []);
 
-  console.log(result);
+  console.log(result[0].avatar);
 
   return (
     <>
@@ -31,6 +31,7 @@ function Repos() {
       ) : (
         <h2>Enter username to see the repositories</h2>
       )}
+      {result[0].user && <img src={`${result[0].avatar}`} id="avatar-image" />}
       <section>
         {result[0].repo &&
           result.map((element, i) => <RepoCard key={i} repo={element} />)}

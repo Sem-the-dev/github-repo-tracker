@@ -16,9 +16,9 @@ export const fetchRepos = (username) => {
         stargazers: el.stargazers_count,
         avatar: el.owner.avatar_url,
         git_url: el.html_url,
-        languages: el.languages_url,
+        languages: el.language,
       }));
-      console.log(repoData);
+      // console.log(repoData);
       dispatch({
         type: "LOAD_REPOS",
         payload: repoData,

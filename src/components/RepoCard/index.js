@@ -6,11 +6,12 @@ const RepoCard = ({ repo }) => {
   // console.log(repo);
 
   let GitUrl = repo.git_url;
-  
-  let languages = repo.languages
-  console.log(languages)
+
+  // let languages = repo.languages
+  // console.log(languages)
 
   return (
+    
     <div className="card">
       {/* Username: {repo.user} */}
       <h3 id="git-repo">
@@ -28,9 +29,7 @@ const RepoCard = ({ repo }) => {
       <p>
         <span>&#9734;</span>Stargazers: {repo.stargazers}
       </p>
-      <p>
-        <span>&#9734;</span>Language: {repo.languages}
-      </p>
+      <p>{repo.languages}</p>
     </div>
   );
 };
