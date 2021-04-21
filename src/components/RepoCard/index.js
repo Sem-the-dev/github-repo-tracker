@@ -11,7 +11,6 @@ const RepoCard = ({ repo }) => {
   // console.log(languages)
 
   return (
-    
     <div className="card">
       {/* Username: {repo.user} */}
       <h3 id="git-repo">
@@ -29,7 +28,9 @@ const RepoCard = ({ repo }) => {
       <p>
         <span>&#9734;</span>Stargazers: {repo.stargazers}
       </p>
-      <p>{repo.languages}</p>
+      <p>
+        <span>&#9781;</span>{repo.languages}
+      </p>
     </div>
   );
 };

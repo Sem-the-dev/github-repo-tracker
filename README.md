@@ -1,4 +1,4 @@
-# GitPinner 
+# GitPinner
 
 Welcome to GitPinner
 
@@ -9,21 +9,22 @@ Welcome to GitPinner
 - Run `npm run dev`
 
 ### Wins
+
 - API runs
 - Cards display with data
 - User input form works
 - Responsive
 
-### Challenges 
-- Not deployed yet
+### Bugs
 
-### Future features 
+- languages icon still appears even if no language
+- footer isn't fixed on home page or stays in same place when scrolling
+- length on repo name too long on some cards
+
+### Future features
+
 - [ ] total repo count
-- [ ] user avatar
-- [ ] language tags
+- [ ] language colors using languageColor.json
 - [ ] testing
-- [ ] add media queries for bigger size  
-    - [ ] h2 width 100?  
-    - [ ] .card reduce width
 
 Semhar & Greta
