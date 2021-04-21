@@ -1,10 +1,14 @@
 import React from "react";
- 
-function App(){
-    return (
-<div>
-    
-</div>
-    )
-} 
+import { Repos } from "./container";
+import { Footer } from "./components";
+
+function App() {
+  return (
+    <div id="container">
+      <Repos />
+      <Footer />
+    </div>
+  );
+}
+
 export default App;
