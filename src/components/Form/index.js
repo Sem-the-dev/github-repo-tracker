@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 
-function Form() {
+function Form({startSearch}) {
   const [name, setName] = useState("");
   const [nameInput, setNameInput] = useState("");
 
@@ -12,22 +12,23 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setName(nameInput);
+    startSearch(nameInput);
     setNameInput("");
   };
 
   return (
     <div>
-      <h2>Hi {name ? name : "Githubber"}</h2>
+      {/* <h2>Hi {name ? name : "Githubber"}</h2> */}
 
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Enter your github username"
+          placeholder="Enter github username"
           value={nameInput}
           onChange={updateInput}
           id="text-input"
         />
-        <input type="submit" value="submit" id="submit-button"/>
+        <input type="submit" value="search" />
       </form>
     </div>
   );
