@@ -12,6 +12,7 @@ Welcome to GitPinner
 - API runs
 - Cards display with data
 - User input form works
+- Responsive
 
 ### Challenges 
 - Not deployed yet

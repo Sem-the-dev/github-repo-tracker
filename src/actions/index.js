@@ -1,8 +1,6 @@
 // API
 import axios from "axios";
 
-
-
 //fetch
 export const fetchRepos = (username) => {
   return async (dispatch) => {
@@ -16,14 +14,15 @@ export const fetchRepos = (username) => {
         open_issues: el.open_issues,
         forks: el.forks,
         stargazers: el.stargazers_count,
+        avatar: el.owner.avatar_url,
+        git_url: el.html_url,
+        languages: el.languages_url,
       }));
-      // console.log(repoData);
+      console.log(repoData);
       dispatch({
         type: "LOAD_REPOS",
         payload: repoData,
       });
-
-      // let repos = data.
     } catch (err) {
       dispatch({
         type: "SET_ERROR",
