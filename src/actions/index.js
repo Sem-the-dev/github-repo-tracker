@@ -17,6 +17,7 @@ export const fetchRepos = (username) => {
         avatar: el.owner.avatar_url,
         git_url: el.html_url,
         languages: el.language,
+        
       }));
       // console.log(repoData);
       dispatch({

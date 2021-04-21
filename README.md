@@ -23,7 +23,7 @@ Welcome to GitPinner
 
 ### Future features
 
-- [ ] total repo count
+- [ ] total repo count, new fetch request to https://api.github.com/users/${username}
 - [ ] language colors using languageColor.json
 - [ ] testing
 
