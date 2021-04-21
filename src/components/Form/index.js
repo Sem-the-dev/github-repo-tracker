@@ -8,7 +8,6 @@ function Form() {
   const dispatch = useDispatch();
 
   const updateInput = (e) => setNameInput(e.target.value);
-  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -26,8 +25,9 @@ function Form() {
           placeholder="Enter your github username"
           value={nameInput}
           onChange={updateInput}
+          id="text-input"
         />
-        <input type="submit" value="submit" />
+        <input type="submit" value="submit" id="submit-button"/>
       </form>
     </div>
   );
