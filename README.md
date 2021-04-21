@@ -20,6 +20,7 @@ Welcome to GitPinner
 - languages icon still appears even if no language
 - footer isn't fixed on home page or stays in same place when scrolling
 - length on repo name too long on some cards
+- images aren't being deployed, needs file extensions
 
 ### Future features
 
